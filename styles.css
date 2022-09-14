@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --header: #1E172F;
+    --Letras-menu: #7C7785;
+    --Download: linear-gradient(0.25turn, #8640D5, #047ED5);
+    --product-page: #2E2550;
+    --Fuente-Lila: #F41486;
+    --Fondo-fonctionnalites: #F1F2F7;
+    --Fondo-Plans-Pricing: #1E172F;
+    --Botón-Subscribe: linear-gradient(0.25turn, #EB66AB, #F41486);
+}
+
+/* header */
+header {
+    width: 100%;
+    background: var(--header);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+    height: 100%;
+    padding: 10px;
+}
+
+ul li a {
+    color: var(--Letras-menu);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.activate {
+    color: white;
+}
+
+li button {
+    color: white;
+    background: var(--Download);
+    width: 125px;
+    height: 45px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+}
+
+/* principal */
+/* main left */
+main {
+    height: 645px;
+    width: 100%;
+    display: flex;
+}
+
+.main-left {
+    background: var(--product-page);
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-main h1 {
+    font-size: 55px;
+}
+
+.text-main p {
+    font-size: 20px;
+}
+
+.btn-container {
+    border: 2px solid var(--Letras-menu);
+    width: 350px;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn-container button {
+    height: 45px;
+    width: 182px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.btn-container .one {
+    background: white;
+    color: var(--Fuente-Lila);
+    cursor: pointer;
+}
+
+.btn-container .two {
+    background: var(--product-page);
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    display: inline-block;
+    margin-left: 190px;
+}
+
+/* main right */
+.main-right {
+    background-image: url(images/otoño.jpg);
+    width: 50%;
+    background-size: cover;
+}
+
+.main-right img {
+    margin-left: 135px;
+    margin-top: 135px;
+    width: 220px;
+    height: 440px;
+}
+
+/* fonctionnalites */
+.fonctionnalites {
+    height: 525px;
+    width: 100%;
+    background: var(--Fondo-fonctionnalites);
+}
+
+.fonctionnalites h1 {
+    text-align: center;
+    font-size: 50px;
+    color: var(--Fuente-Lila);
+}
+
+.fonctionnalites img {
+    height: 300px;
+    width: 480px;
+}
+
+.flex-funcionalidades {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+}
+
+.text-section {
+    text-align: left;
+    width: 360px;
+}
+
+.text-section h2 {
+    color: var(--Fuente-Lila);
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.text-section h3 {
+    color: var(--Fuente-Lila);
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.text-section p i{
+    color: var(--Fuente-Lila);
+    margin-bottom: 5px;
+}
+/* plans pricing */
+.plans-pricing{
+    background: var(--Fondo-Plans-Pricing);
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+.plans-pricing h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+.plans-pricing .text-lorem{
+    color: white;
+    margin-bottom: 35px;
+    padding: 0 300px;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.card{
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+}
+.card ul{
+    display: flex;
+    flex-direction: column;
+}
+.card ul li{
+    margin: 3px;
+    padding: 5px;
+}
+.price{
+    height: 70px;
+    background: var(--Fondo-fonctionnalites);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-card{
+    margin-bottom: 20px;
+}
+.text-bottom p{
+    text-align: center;
+    color:  black;
+    margin: 45px 20px;
+}
+.button-container{
+    background: var(--Fondo-fonctionnalites);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.button-container button{
+    height: 45px;
+    width: 160px;
+    border-radius: 5px;
+    color: white;
+    border:  0px;
+    cursor: pointer;
+}
+.btn-blue{
+    background: var(--Fondo-Plans-Pricing);
+}
+.btn-pink{
+    background: var(--Botón-Subscribe);
+}
+.title-pink{
+    color:  var(--Fuente-Lila);
+}
+.pink i{
+    color: var(--Fuente-Lila);
+}
+i{
+    font-size: 15px;
+}
+.bx-check{
+    font-size: larger;
+}
+/* footer */
+footer {
+    background: var(--Fondo-fonctionnalites);
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    width: 100%;
+}
+
+.text-footer {
+    display: flex;
+}
+
+.name {
+    color: var(--Fuente-Lila);
+    margin: 0 5px;
+}
+/* celulares*/
+@media screen and (max-width:600px){
+    
+}
